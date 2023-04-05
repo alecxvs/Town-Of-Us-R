@@ -16,11 +16,12 @@ namespace TownOfUs
             position.AdjustPosition();
 
             __instance.text.text =
-                "<color=#00FF00FF>TownOfUs v" + TownOfUs.VersionString + "</color>\n" +
+                "<color=#00FF00FF>TownOfUs v" + TownOfUs.VersionString + "</color> <color=#FF68CCFF>LoversFix</color>\n" +
                 $"Ping: {AmongUsClient.Instance.Ping}ms\n" +
                 (!MeetingHud.Instance
                     ? "<color=#00FF00FF>Modded By: Donners, Term,</color>\n" +
-                    "<color=#00FF00FF>-H & MyDragonBreath</color>\n" : "") +
+                    "<color=#00FF00FF>-H & MyDragonBreath</color>\n" +
+                    "<color=#FF68CCFF>Lovers Fix by SonicXVe</color>\n" : "") +
                 (AmongUsClient.Instance.GameState != InnerNet.InnerNetClient.GameStates.Started
                     ? "<color=#00FF00FF>Formerly: Slushiegoose & Polus.gg</color>" : "");
         }
